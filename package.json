@@ -1,11 +1,13 @@
 {
   "name": "fantastic-umbrella",
   "version": "1.0.0",
-  "description": "ORM",
+  "description": "Eslint Example",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    //"test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
+    "lint": "npx eslint **/*.js --quiet; exit 0",
+    "test": "npm run lint"
     "watch": "nodemon server.js",
     "seed": "node seeds/index.js"
   },
