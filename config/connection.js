@@ -2,7 +2,7 @@ const Sequelize = require('sequelize');
 
 require('dotenv').config();
 
-const sequelize = new sequelize (
+const sequelize = new Sequelize (
   process.env.var_Name,
   process.env.var_User,
   process.env.var_Password,
